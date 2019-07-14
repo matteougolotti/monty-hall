@@ -14,7 +14,7 @@ def always_keep_first_random_choice(n):
     for game in range(n):
         three_doors = generate_random_game()
         first_random_choice = randint(0, 2)
-        # Host: **Opens random door with bad price**
+        # Host: **Opens random door with bad prize**
         # Player: **Keeps same door**
         victories += three_doors[first_random_choice]
     return victories / n
@@ -24,10 +24,10 @@ def always_switch_door_after_first_random_choice(n):
     for game in range(n):
         three_doors = generate_random_game()
         first_random_choice = randint(0, 2)
-        # Host: **Opens random door with bad price**
-        opened_door_with_bad_price = [ x for x in range(3) if three_doors[x] == 0 and x != first_random_choice ][0]
+        # Host: **Opens random door with bad prize**
+        opened_door_with_bad_prize = [ x for x in range(3) if three_doors[x] == 0 and x != first_random_choice ][0]
         # Player: **Switches door**
-        second_choice_after_switch = [ x for x in range(3) if x != first_random_choice and x != opened_door_with_bad_price ][0]
+        second_choice_after_switch = [ x for x in range(3) if x != first_random_choice and x != opened_door_with_bad_prize ][0]
         victories += three_doors[second_choice_after_switch]
     return victories / n
 
