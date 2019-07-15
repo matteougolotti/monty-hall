@@ -1,5 +1,5 @@
 # monty-hall
-A Monte Carlo simulation demontrating the Monty-Hall problem.
+A Monte Carlo simulation demonstrating the Monty-Hall problem.
 
 
 ---
